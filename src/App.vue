@@ -227,7 +227,7 @@ const width = ref(70)
 const inputWidth = ref(70)
 
 const chars = ref(
-    " ⠁⠂⠄⡀⢀⣀⣤⣶⣿"
+    "⠁⠂⠄⡀⢀⣀⣤⣶⣿"
 )
 
 const image = ref(null)
