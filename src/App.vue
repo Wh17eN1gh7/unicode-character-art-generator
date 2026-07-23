@@ -457,15 +457,17 @@ async function copy(){
 
   padding-top:40px;
 
+  padding-left:15px;
+
+  padding-right:15px;
+
 }
-
-
 
 
 
 .title{
 
-  font-size:48px;
+  font-size:clamp(32px,5vw,48px);
 
   font-weight:700;
 
@@ -483,24 +485,19 @@ async function copy(){
 
 
 
-
 .main-card{
 
+  width:100%;
 
-  width:1100px;
-
+  max-width:1100px;
 
   min-height:600px;
 
-
   display:flex;
-
 
   background:white;
 
-
   border-radius:20px;
-
 
   box-shadow:
 
@@ -508,11 +505,12 @@ async function copy(){
 
       rgba(0,0,0,0.1);
 
-
   overflow:hidden;
 
-
 }
+
+
+
 
 
 
@@ -534,13 +532,10 @@ async function copy(){
   gap:25px;
 
 
-  background: #ededed;
+  background:#ededed;
 
 
 }
-
-
-
 
 
 
@@ -555,10 +550,10 @@ async function copy(){
   padding:12px;
 
 
-  background: #ffffff;
+  background:#ffffff;
 
 
-  color: #000000;
+  color:#000000;
 
 
   text-align:center;
@@ -584,7 +579,7 @@ async function copy(){
 
 .upload-btn:hover{
 
-  box-shadow: 12px 12px 12px rgba(0,0,0,0.1);
+  box-shadow:12px 12px 12px rgba(0,0,0,0.1);
 
 }
 
@@ -593,9 +588,7 @@ async function copy(){
 
 
 
-
 .language-box,
-
 
 .control-item{
 
@@ -618,7 +611,6 @@ async function copy(){
 
 
 select,
-
 
 input[type="number"]{
 
@@ -693,7 +685,6 @@ input[type="range"]{
 
 
 
-
 .copy-btn{
 
 
@@ -720,9 +711,12 @@ input[type="range"]{
 
   font-size:16px;
 
-  transition: .2s;
+
+  transition:.2s;
+
 
 }
+
 
 
 
@@ -730,10 +724,10 @@ input[type="range"]{
 
 
 .copy-btn:hover{
-  box-shadow: 12px 12px 12px rgba(0,0,0,0.2);
+
+  box-shadow:12px 12px 12px rgba(0,0,0,0.2);
+
 }
-
-
 
 
 
@@ -747,6 +741,9 @@ input[type="range"]{
 
 
   flex:1;
+
+
+  min-width:0;
 
 
   display:flex;
@@ -765,7 +762,6 @@ input[type="range"]{
 
 
 }
-
 
 
 
@@ -809,50 +805,202 @@ input[type="range"]{
   margin:0;
 
 
+  max-width:100%;
+
+
+  overflow:auto;
+
+
 }
+
+
+
+
+
+
+
+
 .footer-icons{
 
-  margin-top:320px;
+
+  margin-top:60px;
+
 
   display:flex;
 
+
   justify-content:center;
+
 
   gap:20px;
 
+
 }
+
+
+
+
+
+
+
 .icon-button{
+
 
   width:64px;
 
+
   height:64px;
 
-  border-radius:50%;
 
   display:flex;
 
+
   justify-content:center;
+
 
   align-items:center;
 
 
-  transition:
+  transition:transform .3s ease;
 
-      transform .3s ease
 
 }
+
+
+
+
+
+
+
 .icon-button img{
 
-  width:64px;
 
-  height:64px;
+  width:48px;
+
+
+  height:48px;
+
 
 }
+
+
+
+
+
+
+
 .icon-button:hover{
+
 
   transform:translateY(-5px);
 
+
 }
+
+
+
+
+
+
+
+
+
+/* 手机适配 */
+
+@media(max-width:800px){
+
+
+  .page{
+
+    padding-top:20px;
+
+  }
+
+
+
+
+  .main-card{
+
+
+    flex-direction:column;
+
+
+    width:100%;
+
+
+    min-height:auto;
+
+
+  }
+
+
+
+
+
+
+  .control-panel{
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
+  }
+
+
+
+
+
+
+  .preview-panel{
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
+    min-height:300px;
+
+
+  }
+
+
+
+
+
+
+  .preview{
+
+
+    font-size:10px;
+
+
+    padding:15px;
+
+
+  }
+
+
+
+
+
+
+  .footer-icons{
+
+
+    margin-top:40px;
+
+
+  }
+
+
+
+}
+
 
 
 </style>
