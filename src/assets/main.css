@@ -1,0 +1,10 @@
+@import './base.css';
+
+body {
+    margin: 0;
+    background-color: #ffdf66; /* 淡黄色 */
+}
+
+#app {
+    width: 100%;
+}
