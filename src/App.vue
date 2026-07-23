@@ -121,7 +121,7 @@
 
           >
 
-            <option value=" ⠁⠂⠄⡀⢀⣀⣤⣶⣿">
+            <option value="⠁⠂⠄⡀⢀⣀⣤⣶⣿">
 
               {{ $t("braille") }}
 
