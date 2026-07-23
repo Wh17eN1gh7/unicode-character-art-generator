@@ -127,7 +127,7 @@
 
             </option>
 
-            <option value="@%#*+=-:.">
+            <option value=".:-=+*#%@">
 
               {{ $t("ascii") }}
 
