@@ -121,13 +121,13 @@
 
           >
 
-            <option value="⠁⠂⠄⡀⢀⣀⣤⣶⣿">
+            <option value=" ⠁⠂⠄⡀⢀⣀⣤⣶⣿">
 
               {{ $t("braille") }}
 
             </option>
 
-            <option value=".:-=+*#%@">
+            <option value=" .:-=+*#%@">
 
               {{ $t("ascii") }}
 
